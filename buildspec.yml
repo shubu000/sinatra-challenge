@@ -9,7 +9,5 @@ phases:
     commands:
       - echo "Build started on `date`"
       - echo "Compiling the Ruby code..."
-      - ruby helloworld.rb 
-  post_build:
-    commands:
-      - echo Build completed on `date`
+      - nohup ruby helloworld.rb &
+
