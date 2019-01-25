@@ -2,13 +2,6 @@ version: 0.1
 
 phases:
   install:
-    commands:
-      - echo "Update Ruby..."
-      - sudo yum install -y ruby24
-      - echo "Set Ruby Version....."
-      - sudo alternatives --set ruby /usr/bin/ruby2.4
-      - echo "Installing Sinatra..."
-      - gem install sinatra
   build:
     commands:
       - echo "Build started on `date`"
