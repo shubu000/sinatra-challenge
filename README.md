@@ -28,6 +28,7 @@ Prerequisites
 
 Code
 Clone this repositry to your local drive via 
+  
   git clone https://github.com/shubu000/sinatra-challenge
 
 Permissions
