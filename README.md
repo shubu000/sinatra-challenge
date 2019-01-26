@@ -48,15 +48,21 @@ Setup ebCLI with IAM user
 You would need 1 additional permission, i have attached the setting as autoscaling.json
 
 Elastic Beanstalk Application create
+
 To create the application, use
+    
     eb init { application name }
-    choose a region suitable for you
+    
+choose a region suitable for you
 
 Put REASinatrastable.cfg.yml into your GIT folder's beanstalk config folder,
+  
   cp  REASinatrastable.cfg.yml /GIT PATH/.elasticbeanstalk/saved-config/REASinatrastable.cfg.yml 
+
 where GIT PATH is where you have the git clone.
 
 Elastic Beanstalk Environment create
+    
     eb create { env -name } --cfg REASinatrastable.cfg.yml
 
 Once it is deployed, you can access the web server via the EIP.
