@@ -1,0 +1,17 @@
+EnvironmentConfigurationMetadata:
+  DateCreated: '1548485604000'
+  DateModified: '1548485604000'
+Platform:
+  PlatformArn: arn:aws:elasticbeanstalk:ap-southeast-2::platform/Puma with Ruby 2.6 running on 64bit Amazon Linux/2.9.0
+OptionSettings:
+  aws:elasticbeanstalk:environment:
+    EnvironmentType: SingleInstance
+    ServiceRole: aws-elasticbeanstalk-service-role
+  aws:elasticbeanstalk:healthreporting:system:
+    SystemType: enhanced
+  aws:autoscaling:launchconfiguration:
+    IamInstanceProfile: aws-elasticbeanstalk-ec2-role
+EnvironmentTier:
+  Type: Standard
+  Name: WebServer
+AWSConfigurationTemplateVersion: 1.1.0.0
