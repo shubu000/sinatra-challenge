@@ -39,3 +39,10 @@ Having never to used this before, I found an example of deploying an application
 I followed each step on the tutorial, however I am always greeted with an error about user roles.
 I granted all codedeploy roles to the user as well as read only acess to s3, but that was not working.
 
+-AWS elastic beanstalk - load balancer
+I had expereienced a timeout on the webserver a few times, so i wanted to add a load balancer to make it highly available, however i was never able to reach the server despite typing in the ip address. This is something that can be improved in the future.
+
+Future improvements
+Working eb create command to create the stack via CLI
+Solve load balancing and add/force https for security
+I have disabled SSH for now for security, but that can be modified later for more advanced usage
