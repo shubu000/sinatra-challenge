@@ -6,12 +6,17 @@ There are two ways of doing this
 
 
 To deploy this application on the server, you need:
+
 AWS account
 
 I used Amazon elastic bean stalk as a way to deploy the code to the cloud.
+
 I logged into the console and selected elastic beanstalk
+
 I simply created a new application, gave it a name
+
 After this I created the environment via the wizard, I named the fields and uploaded a zip from my github.
+
 After this beanstalk will create the environment.
 
 So if you want to repeat this, click on the download button to get the zip.
