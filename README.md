@@ -3,6 +3,8 @@ REA Systems Engineer practical task
 There are two ways of doing this
 
 1- Via Console
+
+
 To deploy this application on the server, you need:
 AWS account
 
@@ -22,6 +24,7 @@ In the pipeline, i used github as a source, codebuild as a building engine and u
 
 
 2- Via CLI
+
 Prerequisites
 - GIT
 - AWS eb cli
