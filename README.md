@@ -34,11 +34,17 @@ Permissions
 Setup ebCLI with IAM user
   Make sure the user has these policies
     AWSElasticBeanstalkEnhancedHealth
+    
     AWSElasticBeanstalkWebTier
+    
     AWSElasticBeanstalkMulticontainerDocker
+    
     AWSElasticBeanstalkService
+    
     AWSElasticBeanstalkWorkerTier
+    
     AWSElasticBeanstalkCustomPlatformforEC2Role
+
 You would need 1 additional permission, i have attached the setting as autoscaling.json
 
 Elastic Beanstalk Application create
