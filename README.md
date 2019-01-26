@@ -10,6 +10,8 @@ I simply created a new application, gave it a name
 After this I created the environment via the wizard, I named the fields and uploaded a zip from my github.
 After this beanstalk will create the environment.
 
+So if you want to repeat this, click on the download button to get the zip.
+
 The working example is at http://13.236.19.152/
 I have uploaded the beanstalk config onto github as REASinatrastable
 
