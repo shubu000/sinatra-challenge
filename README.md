@@ -19,6 +19,4 @@ In the pipeline, i used github as a source, codebuild as a building engine and u
 To keep this readme clean, i have attached further text files on how i come to these choices and what i had tried but did not work.
 
 analysisandthoughts.txt - How i arrive at elastic beanstalk
-thatdidntwork.txt - What i had tried
-
 Thank you!
