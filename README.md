@@ -2,7 +2,7 @@ REA Systems Engineer practical task
 ===================================
 There are two ways of doing this
 
-##1- Via Console
+### 1- Via Console ###
 
 **Prerequisites**
 
@@ -33,7 +33,7 @@ I also used codepipeline to setup automatic deployment from github.
 In the pipeline, i used github as a source, codebuild as a building engine and use the previously created environment for deployment.
 
 
-##2- Via CLI
+### 2- Via CLI ###
 
 **Prerequisites**
 
