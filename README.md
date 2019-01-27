@@ -5,11 +5,13 @@ There are two ways of doing this
 ##1- Via Console
 
 **Prerequisites**
+
 To deploy this application on the server, you need:
 
 AWS account
 
 **Steps**
+
 1   I used Amazon elastic bean stalk as a way to deploy the code to the cloud.
 
 2   I logged into the console and selected elastic beanstalk
@@ -23,6 +25,7 @@ After this beanstalk will create the environment.
 To get the zip, click on the download button to get the zip.
 
 **Finished result**
+
 The working example is at http://13.236.19.152/
 I have uploaded the beanstalk config onto github as REASinatrastable.cfg.yml
 
@@ -33,15 +36,18 @@ In the pipeline, i used github as a source, codebuild as a building engine and u
 ##2- Via CLI
 
 **Prerequisites**
+
 - GIT
 - AWS eb cli
 
 **Code**
+
 Clone this repositry to your local drive via 
   
   git clone https://github.com/shubu000/sinatra-challenge
 
 **Permissions**
+
 Setup ebCLI with IAM user
   Make sure the user has these policies
     AWSElasticBeanstalkEnhancedHealth
@@ -61,6 +67,7 @@ You would need 1 additional permission, i have attached the setting as autoscali
 **Elastic Beanstalk**
 
 *Application*
+
 To create the application, use
     
     eb init { application name }
