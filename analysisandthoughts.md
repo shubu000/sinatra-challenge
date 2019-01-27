@@ -56,6 +56,9 @@ I tried to minimise the amount of roles assigned to any user. However when permi
 **Future improvements**
 
 ~~Working eb create command to create the stack via CLI~~
+
 Solve load balancing and add/force https for security
+
 I have disabled SSH for now for security, but that can be modified later for more advanced usage
+
 Trim security roles
