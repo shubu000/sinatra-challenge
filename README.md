@@ -2,25 +2,27 @@ REA Systems Engineer practical task
 ===================================
 There are two ways of doing this
 
-1- Via Console
+##1- Via Console
 
-
+**Prerequisites**
 To deploy this application on the server, you need:
 
 AWS account
 
-I used Amazon elastic bean stalk as a way to deploy the code to the cloud.
+**Steps**
+1   I used Amazon elastic bean stalk as a way to deploy the code to the cloud.
 
-I logged into the console and selected elastic beanstalk
+2   I logged into the console and selected elastic beanstalk
 
-I simply created a new application, gave it a name
+3   I simply created a new application, gave it a name
 
-After this I created the environment via the wizard, I named the fields and uploaded a zip from my github.
+4   After this I created the environment via the wizard, I named the fields and uploaded a zip from my github.
 
 After this beanstalk will create the environment.
 
-So if you want to repeat this, click on the download button to get the zip.
+To get the zip, click on the download button to get the zip.
 
+**Finished result**
 The working example is at http://13.236.19.152/
 I have uploaded the beanstalk config onto github as REASinatrastable.cfg.yml
 
@@ -28,18 +30,18 @@ I also used codepipeline to setup automatic deployment from github.
 In the pipeline, i used github as a source, codebuild as a building engine and use the previously created environment for deployment.
 
 
-2- Via CLI
+##2- Via CLI
 
-Prerequisites
+**Prerequisites**
 - GIT
 - AWS eb cli
 
-Code
+**Code**
 Clone this repositry to your local drive via 
   
   git clone https://github.com/shubu000/sinatra-challenge
 
-Permissions
+**Permissions**
 Setup ebCLI with IAM user
   Make sure the user has these policies
     AWSElasticBeanstalkEnhancedHealth
@@ -56,8 +58,9 @@ Setup ebCLI with IAM user
 
 You would need 1 additional permission, i have attached the setting as autoscaling.json
 
-Elastic Beanstalk Application create
+**Elastic Beanstalk**
 
+*Application*
 To create the application, use
     
     eb init { application name }
@@ -70,9 +73,13 @@ Put REASinatrastable.cfg.yml into your GIT folder's beanstalk config folder,
 
 where GIT PATH is where you have the git clone.
 
-Elastic Beanstalk Environment create
-    
-    eb create { env -name } --cfg REASinatrastable.cfg.yml
+*Environment*
+
+To create the environment, use the following command
+
+    eb create { env-name } --cfg REASinatrastable.cfg.yml
+
+Replace { env-name } with the name of the environment, take out the brackets.
 
 Once it is deployed, you can access the web server via the EIP.
 
