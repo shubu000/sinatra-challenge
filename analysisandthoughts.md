@@ -8,6 +8,7 @@ Prior to this challenge, i had never:
 So thank you!
 
 **Analysis phase 1 - Application**
+
 Before I deployed the application, I read the code on github to ascertain what is the application.
 I can tell that it is a simple web server (Sinatra) displaying "helloworld" and the language is Ruby.
 
@@ -21,6 +22,7 @@ I only needed the server to grab sinatra via gem since it is a ruby machine.
 I then made the script run in the background, otherwise it would hold up build process
 
 **Analysis phase 2 - deployment platform**
+
 My first instinct is to roll a VM, I had done that a  number of times before, however since the instruction was to create code/config that is repeatable
 I cannot simply send an image of a VM.
 Seeing that this application only display text, I tried to use the most minimalist platform, lambda.
@@ -52,6 +54,7 @@ I had expereienced a timeout on the webserver a few times, so i wanted to add a 
 I tried to minimise the amount of roles assigned to any user. However when permission errors occurs, i just have to keep adding the roles. As of my current solution, I think that the roles can be reduced to become more granular, but that can be a further improvement later on.
 
 **Future improvements**
+
 ~~Working eb create command to create the stack via CLI~~
 Solve load balancing and add/force https for security
 I have disabled SSH for now for security, but that can be modified later for more advanced usage
