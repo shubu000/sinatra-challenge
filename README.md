@@ -97,4 +97,5 @@ The results are identical
 To keep this readme clean, i have attached further text files on how i come to these choices and what i had tried but did not work.
 
 analysisandthoughts.txt - How i arrive at elastic beanstalk
+
 Thank you!
